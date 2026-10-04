@@ -2,10 +2,13 @@ name: CI/CD Pipeline - PetClinic
  
 on:
   push:
-    branches: [ dev ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - main
+      - dev
 
+  pull_request:
+    branches:
+      - main
 
 env:
   JAVA_VERSION: '25'
